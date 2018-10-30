@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+	<definition name="base.definition" template="/WEB-INF/jsp/layout/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsp/layout/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/layout/footer.jsp" />
+	</definition>
+	
+	<definition name="base.definition.form" template="/WEB-INF/jsp/layout/formLayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsp/layout/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/layout/footer.jsp" />
+	</definition>
+
+	<definition name="getAllClients" extends="base.definition">
+		<put-attribute name="title" value="Get All Registered client" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/client/getAllClients.jsp" />
+	</definition>
+
+	<definition name="registration" extends="base.definition.form">
+		<put-attribute name="title" value="Registered Your Self" />
+		<put-attribute name="body" value="/WEB-INF/jsp/client/registration.jsp" />
+	</definition>
+
+	
+</tiles-definitions>
