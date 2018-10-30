@@ -1,2 +1,3 @@
 # JavaSpirngDemo
-Spring MVC + Hibernate + Maven tutorial with all CRUD operations 
+Spring MVC + Hibernate tutorial with all CRUD operations 
+Database: PostgreSQl
